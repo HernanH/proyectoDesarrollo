@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Aula</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="estilo.css">
+
+</head>
+
+<body>
+
+
+        <div class="header">
+                <h1>Perfil</h1>
+                <h2>Alumno 01</h2>
+        </div>
+
+        <div class="navbar">
+                <a href="perfil.html">Mi perfil</a>
+                <a href="noticias.html">Noticias</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Cursos 
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="curso.html">Curso 01</a>
+                    <a href="#">Curso 02</a>
+                    <a href="cursos.html">Inscribir Curso</a>
+                  </div>
+                </div> 
+                <a href="calendario.html" class="right">Calendario</a>
+        </div>
+<!--
+ Side navigation 
+    <div class="sidenav">
+        <a href="#">Modificar datos</a>
+        <a href="#">Ver cursos inscritos</a>
+        <a href="#">Modificar ramos</a>
+        <a href="#">Cerrar sesion</a>
+    </div>
+      
+      Page content 
+      <div class="row">          
+            <div class="columncenter2"> <h2>Evaluaciones</h2>
+                <p>En esta pagina podras las distintas evaluaciones de la asignatura.</p>
+            </div>
+        </div>-->
+        <div class="row">
+
+                <div class="columnP"> <h2>Opciones</h2>
+                    <ul>
+                    <li><a href="datos.html">Ver datos</a></li>
+                    <li><a href="mdatos.html">Modificar datos</a></li>
+                    <li><a href="cursos.html">Cursos</a></li>
+                    <li><a href="#">Cerrar sesion</a></li>
+                    </ul>
+                </div>
+        
+                <div class="columncenterP"> 
+                    <div class="container">
+                            <form action="action_page.php">
+                                <div class="nombre">
+                              <label for="fname">Nombre Completo</label>
+                              <input readonly="readonly" class="NC" type="text" id="fname" name="firstname" placeholder="Alumno 01"></div>
+                          
+                              <div class="edad">
+                              <label for="ledad">Edad</label>
+                              <input readonly="readonly" class="Ed" type="text" id="ledad" name="lastname" placeholder="22"></div>
+
+                              <div class="correo">
+                              <label for="lcorreo">Correo</label>
+                              <input readonly="readonly" class="Cor" type="text" id="lcorreo" name="lastname" placeholder="Alumno01@gmail.com"></div>
+
+                              <div class="comuna">
+                              <label for="country">Comuna</label>
+                              <select id="country" name="country">
+                                <option value="australia">Valparaiso</option>
+                                <option value="canada">Viña del Mar</option>
+                                <option value="usa">Villa Alemana</option>
+                                <option value="Canada">Villa Alemana</option>
+                              </select></div>
+
+                              <!--<button class="btn success">Enviar nuevos datos</button>-->
+                          
+                            </form>
+                          </div>    
+                </div>       
+        </div>
+</body>
+
+</html>

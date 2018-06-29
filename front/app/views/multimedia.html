@@ -1,0 +1,82 @@
+<!--<script src="bower_components/angular-youtube-api-factory/dist/angular-youtube-api-factory.min.js"></script>-->
+<div ng-include="multimedia.plantilla.url" ng-init="visualizarVideos()"></div>
+
+
+<body>
+<img id="background" src="images/Pizarra.jpg">
+<div class="container">
+    <!-- <button type="button" class="btn btn-default" ng-click="metodo1()">Ir al Formu</button> -->
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Tema</label>
+        <input type="text" class="form-control" placeholder="nombre del video" ng-model="video.nombre">
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Url</label>
+        <input type="text" class="form-control" placeholder="url del video" ng-model="video.url">
+      </div>
+      
+      <button type="submit" class="btn btn-default" ng-click="crearVideo();visualizarVideos()">Crear</button>
+      <button type="submit" class="btn btn-default" ng-click="visualizarVideos()">Ver</button>
+     
+    
+      
+      
+      <!--ng-click="verCurso()">Submit</button>
+      <a href="cursos.html">Mi perfil</a>-->
+    
+    
+  
+    
+      <!--<button type="submit" class="btn btn-default" ng-click="verCursos()">Ver cursos</button>-->
+    </form>
+    <!-- <p> el nombre es:{{persona}}</p> -->
+</div>
+<!--{{video}}-->
+
+
+
+
+<!--
+<div class="container">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/xcJtL7QggTI"></iframe>
+</div>-->
+
+<!--
+<div class="container" ng-app="jtt_youtube">
+  <div ng-controller="appController">
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/xcJtL7QggTI"></iframe>
+  </div>
+</div>-->
+</body>
+
+  
+
+<div class="card">
+    <div class="card-body">
+  
+        <div class="table-wrapper-2">
+  
+            <!--Table-->
+            <table class="table table-responsive-md">
+                <thead class="mdb-color lighten-4">
+                    <tr>
+                        <th class="th-lg">Tema</th>
+                        <th class="th-lg">Video</th>
+                        <th class="th-lg">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody ng-repeat="video in video2">
+                    <tr>
+                        <td >{{video.nombre}}</td>
+                        <td ><div class="container">
+                            <iframe width="300" height="225" ng-src="{{trustSrc(video.url)}}"></iframe>
+                        </div></td>  
+                        <td><button type="submit" class="btn btn-default" ng-click="borrarVideos(video.id);visualizarVideos()">Borrar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Table-->
+        </div>
+    </div>
+  </div>

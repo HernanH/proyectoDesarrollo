@@ -1,0 +1,34 @@
+<div ng-include="main.plantilla.url"></div>
+<div class="container">
+<!-- <button type="button" class="btn btn-default" ng-click="metodo1()">Ir al Formu</button> -->
+<body>
+<img id="background" src="images/Pizarra.jpg">
+<link rel="stylesheet" href="styles/main.css">
+
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nombre</label>
+    <input type="text" class="form-control" placeholder="Nombre del curso" ng-model="course.nombre">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Jornada</label>
+    <input type="text" class="form-control" placeholder="Jornada del curso" ng-model="course.jornada">
+  </div>
+  <button type="submit" class="btn btn-default" ng-click="crearCurso()">Crear</button>
+  <button type="submit" class="btn btn-default" ng-model=course.id ng-click="irCursos()">Ver Cursos</button>
+
+
+
+  
+  
+  <!--ng-click="verCurso()">Submit</button>
+  <a href="cursos.html">Mi perfil</a>-->
+
+
+  <!--<button type="submit" class="btn btn-default" ng-click="verCursos()">Ver cursos</button>-->
+</form>
+<!-- <p> el nombre es:{{persona}}</p> -->
+</div>
+
+</body>

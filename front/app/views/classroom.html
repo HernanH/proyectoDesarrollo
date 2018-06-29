@@ -1,0 +1,89 @@
+<div ng-include="classroom.plantilla.url" ng-init="verClases()"></div>
+
+
+<body>
+<img id="background" src="images/Pizarra.jpg">
+<link rel="stylesheet" href="styles/classroom.css">
+<div class="container">
+  <!-- <button type="button" class="btn btn-default" ng-click="metodo1()">Ir al Formu</button> -->
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Area</label>
+      <input type="text" class="form-control" placeholder="Area de la clase" ng-model="clase.area">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Tema</label>
+      <input type="text" class="form-control" placeholder="Tema de la clase" ng-model="clase.tema">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Cupos</label>
+      <input type="text" class="form-control" placeholder="Cupos de la clase" ng-model="clase.cupos">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Direccion</label>
+      <input type="text" class="form-control" placeholder="Direccion de la clase" ng-model="clase.direccion">
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="crearClases();verClases()">Crear</button>
+    <button type="submit" class="btn btn-default" ng-click="verClases()">Ver</button>
+   
+  
+  </body>
+    
+    <!--ng-click="verCurso()">Submit</button>
+    <a href="cursos.html">Mi perfil</a>-->
+  
+  
+
+  
+    <!--<button type="submit" class="btn btn-default" ng-click="verCursos()">Ver cursos</button>-->
+  </form>
+  <!-- <p> el nombre es:{{persona}}</p> -->
+</div>
+
+
+<!--<div ng-repeat="clase in clase2">
+
+  <td>{{clase.area}}</td>
+  <td >{{clase.tema}}</td>
+  <td >{{clase.cupos}}</td>
+  <td >{{clase.direccion}}</td>
+
+
+  <button type="submit" class="btn btn-default" ng-model=course.id ng-click="verVideos(clase.id)">Multimedia</button>
+  <button type="submit" class="btn btn-default" ng-click="borrarClases(clase.id);verClases()">Borrar clase</button>
+</div>-->
+
+
+
+<div class="card">
+    <div class="card-body">
+  
+        <div class="table-wrapper-2">
+  
+            <!--Table-->
+            <table class="table table-responsive-md">
+                <thead class="mdb-color lighten-4">
+                    <tr>
+                        <th class="th-lg">Area de la clase</th>
+                        <th class="th-lg">Tema especifico</th>
+                        <th class="th-lg">Cupos</th>
+                        <th class="th-lg">Direccion</th>
+                        <th class="th-lg">Opciones</th>
+
+                    </tr>
+                </thead>
+                <tbody ng-repeat="clase in clase2">
+                    <tr>
+                        <td >{{clase.area}}</td>
+                        <td >{{clase.tema}}</td> 
+                        <td>{{clase.cupos}}</td>
+                        <td>{{clase.direccion}}</td>
+                        <td><button type="submit" class="btn btn-default" ng-click="verVideos(clase.id)">Multimedios</button>
+                        <button type="submit" class="btn btn-default" ng-click="borrarClases(clase.id);verClases()">Borrar clase</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Table-->
+        </div>
+    </div>
+  </div>

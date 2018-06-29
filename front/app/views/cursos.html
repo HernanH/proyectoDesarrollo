@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="styles/cursos.css">
+<div ng-include="cursos.plantilla.url" ng-init="verCursos()"></div>
+
+
+<body>
+<img id="background" src="images/Pizarra.jpg">
+<div class="container">
+<!-- <button type="button" class="btn btn-default" ng-click="metodo1()">Ir al Formu</button> 
+
+
+
+<button type="button" class="btn btn-default" ng-click="verCursos()">ver</button>
+<div ng-repeat="course in course">
+
+  <td >{{course.nombre}}</td>
+  <td >{{course.jornada}}</td>
+
+
+  <button type="submit" class="btn btn-default" ng-click="verClases(course.id)">Clases</button>
+  <button type="submit" class="btn btn-default" ng-click="borrarCurso(course.id);verCursos()">Borrar curso</button>
+</div>
+</body>-->
+
+
+
+<div class="card">
+  <div class="card-body">
+
+      <div class="table-wrapper-2">
+
+          <!--Table-->
+          <table class="table table-responsive-md">
+              <thead class="mdb-color lighten-4">
+                  <tr>
+                      <th class="th-lg">Nombre del curso</th>
+                      <th class="th-lg">Jornada del curso</th>
+                      <th class="th-lg">Opciones</th>
+                  </tr>
+              </thead>
+              <tbody ng-repeat="course in course">
+                  <tr>
+                      <td >{{course.nombre}}</td>
+                      <td >{{course.jornada}}</td> 
+                      <td><button type="submit" class="btn btn-default" ng-click="verClases(course.id)">Ver clases</button>
+                      <button type="submit" class="btn btn-default" ng-click="borrarCurso(course.id);verCursos()">Borrar curso</button></td>
+
+                  </tr>
+              </tbody>
+          </table>
+          <!--Table-->
+      </div>
+  </div>
+</div>
