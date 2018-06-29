@@ -66,6 +66,11 @@ angular
         controller: 'FormularioCtrl',
         controllerAs: 'formulario'
       })
+      .when('/profesor', {
+        templateUrl: 'views/profesor.html',
+        controller: 'ProfesorCtrl',
+        controllerAs: 'profesor'
+      })
       .otherwise({
         redirectTo: '/'
       });

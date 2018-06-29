@@ -1,0 +1,34 @@
+<div ng-include="profesor.plantilla.url"></div>
+
+
+<body>
+<img id="background" src="images/Pizarra.jpg">
+<link rel="stylesheet" href="styles/classroom.css">
+<div class="container">
+  <!-- <button type="button" class="btn btn-default" ng-click="metodo1()">Ir al Formu</button> -->
+  <form>
+    <div class="form-group">
+      <label for="exampleInputEmail1">Nombre</label>
+      <input type="text" class="form-control" placeholder="nombre" ng-model="teacher.nombre">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Correo</label>
+      <input type="text" class="form-control" placeholder="Correo" ng-model="teacher.correo">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Edad</label>
+      <input type="text" class="form-control" placeholder="Edad" ng-model="teacher.edad">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Rut</label>
+      <input type="text" class="form-control" placeholder="Rut" ng-model="teacher.rut">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Especialidad</label>
+        <input type="text" class="form-control" placeholder="Especialidad" ng-model="teacher.especialidad">
+      </div>
+    <button type="submit" class="btn btn-default" ng-click="crearProfesor()">Crear</button>
+   
+  
+</body>
+    
